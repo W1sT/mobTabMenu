@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery mobTabMenu Demo 4: Advanced (Responsive demo with custom links and callbacks)</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="js/jQuery.mobTabMenu.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/mobTabMenu.css" />
+	<link rel="stylesheet" type="text/css" href="css/demos.css" />
+	<link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css" />
+	<script>
+	
+		$(function() {
+		
+			$('nav#mobile-menu').mobTabMenu({
+			
+				position: 				'default',
+				speed:    				500,
+				hideMenuOnResize:       900,
+				toggleElements:			'.toggle',
+				openElements:			'.open',
+				closeElements:			'.close',
+				onInit:					function() { console.log('mobTabMenu onInit'); },
+				onOpened:				function() { console.log('mobTabMenu onOpened'); },
+				onClosed:				function() { console.log('mobTabMenu onClosed'); },
+				onToggled:				function() { console.log('mobTabMenu onToggled'); },
+				onBeforeOpen:			function() { console.log('mobTabMenu onBeforeOpen'); },
+				onBeforeClose:			function() { console.log('mobTabMenu onBeforeClose'); },
+				onBeforeToggle:			function() { console.log('mobTabMenu onBeforeToggle'); }
+			
+			});
+		
+		});
+	
+	</script>
+</head>
+<body class="demo-4">
+	<div id="mobile-bar">
+		<a href="#" class="mob-tab-menu-toggle toggle"></a>
+	</div>
+	<nav id="desktop-menu">
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Blog</a>
+		<a href="#">Contact</a>
+	</nav>
+	<nav id="mobile-menu" style="display: none;">
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<a href="#">Services</a>
+		<a href="#">Blog</a>
+		<a href="#">Contact</a>
+	</nav>
+	<h1>jQuery mobTabMenu Demo 4: Advanced (Responsive demo with custom links and callbacks)</h1>
+	<article>
+	
+		<p><a href="demos.html">Back to demos</a></p>
+		
+		<p><strong>Vary the width of your browser to see mobTabMenu show/hide and to access custom links</strong></p>
+		
+		<p class="custom-links">Custom links: <a class="open" href="#">Open</a> | <a class="toggle" href="#">Toggle</a> | <a class="close" href="#">Close</a></p>
+	
+		<p>His officiis hendrerit id, ei enim sale est. Enim philosophia no mea, sed natum splendide argumentum ut. Duo omnis ullum mnesarchum id. An his brute homero regione, brute ubique mei te. Eum labores accusata id. Pro et iisque incorrupte, ne vim veniam urbanitas.</p>
+		
+		<p>An pri sumo simul blandit, per habeo incorrupte te. Nec id sonet primis. Velit molestie nam in, eum et convenire complectitur. Mei ad quas prodesset, te mel prima regione accumsan, ex ludus appellantur vix. Et alterum partiendo delicatissimi quo, has vocent indoctum id. Te sit dicta noster comprehensam, harum reprehendunt qui at, ad mazim dissentiunt pri.</p>
+		
+		<p>Ex nostrud eleifend vis. Pro modo platonem appellantur no. Reque quaerendum id duo. Esse aperiri at per, sea an diceret vocibus epicurei. Ea mea doming utroque detraxit.</p>
+		
+		<p>Causae albucius at mel, eu saepe libris quaerendum mea. Bonorum facilisis usu cu, vel ad mutat mazim. At veniam officiis reprehendunt per. Duo altera volutpat suscipiantur ut, duo vidisse singulis an, quando iracundia signiferumque at mei. Eu eos nisl nihil, sale augue possim ad usu. Duo in magna repudiare quaerendum, electram instructior ei eos.</p>
+		
+		<p>Ex cum adolescens adversarium, est ut dictas vocibus. Natum eirmod eam te. Aeque commune nam no, eum cu exerci graece postulant. Maiorum dignissim et nec. No ius posse scripta, in eum tantas debitis assueverit. Cum in vide tractatos, nam an etiam corrumpit.</p>
+		
+		<p>Ne tota mandamus sadipscing sed, has eu utamur disputando adversarium, ex everti deterruisset sed. Vis regione placerat contentiones ex, modus minimum antiopam cu pro, illum postea suscipiantur ad eam. Usu brute zril vivendo an, et mel wisi quidam tacimates, ei cum offendit adipiscing. Ei sit posse omittam, regione virtute te vim. Qui ex eius nostrud facilisi, nonumy corpora deterruisset sed ex. Vix ne justo laudem delicata, habeo recteque sea ne.</p>
+		
+		<p>Nonumy bonorum principes cu est, sea eripuit molestiae efficiantur no, nec diam posse denique ex. His omnis labores ea. Ut viderer facilisi definiebas vim, pri ut affert consul detracto. Posidonium inciderint at sed, ad eam nullam deserunt. Id ceteros repudiare sed, tempor vocent ut his.</p>
+		
+		<p>Mutat impedit pro at, tota repudiare mea ex. Id labores vocibus invenire mea. Rebum erant pri eu, id eius nulla volutpat sed. Eum an quod sanctus, ne cum modo impedit tractatos. No debet possim has, usu cibo veniam menandri ei, nec solet interesset cu. Pro case iusto prompta no, eum autem oratio adversarium et, has utinam evertitur no. Sumo adhuc eu vel.</p>
+		
+		<p>Ea odio tation lucilius qui, duo harum zril ad, his lorem adolescens an. Ludus noluisse delectus ea vim, nam adolescens definiebas ullamcorper ad, qui ne rebum everti numquam. Mel ne suavitate consequat. Pro qualisque corrumpit abhorreant cu, et nam pertinax pertinacia, ad dicat voluptatibus vituperatoribus mei. In nec ceteros accusata, at soluta adipiscing vim, summo habemus instructior no vim. Aperiri vivendo ea mea, principes theophrastus pri no.</p>
+		
+		<p>Eum nibh aliquid id. Quo noluisse definitiones ne. An nec iudicabit definitionem, an periculis philosophia his, mazim vitae cum in. Has nostrum atomorum platonem ex.</p>
+		      
+	</article>	
+	<footer>
+			Eum nibh aliquid id. Quo noluisse definitiones ne
+	</footer>
+</body>
+</html>
